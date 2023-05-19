@@ -4,6 +4,4 @@ This is a simple bash script which generates a random number and then attempts t
 
 ![](https://i.imgur.com/ZqfyNJm.png)
 
-See how long you can keep your machine running in this anxiety inducing, practically useless and downright shit game.
-
 ```This does not come with ANY warranty, run at your own risk.```
