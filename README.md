@@ -2,6 +2,8 @@
 
 This is a simple bash script which generates a random number and then attempts to find a process with the same PID as the number. If it does not find a PID, you win the round - however, if the PID is matching, then the process will be killed.
 
+![](https://i.imgur.com/ZqfyNJm.png)
+
 See how long you can keep your machine running in this anxiety inducing, practically useless and downright shit game.
 
 ```This does not come with ANY warranty, run at your own risk.```
