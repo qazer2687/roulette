@@ -1,18 +1,23 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+GRN='\033[0;32m'
+RED='\033[0;31m'
+CLR='\033[0m'
+BLU='\033[0;34m'
 
 while true; do
-    pid=$(( RANDOM % 100000 + 1 ))
+    pid=$(( RANDOM % 5000 + 1 ))
 
     if ps -p $pid > /dev/null; then
-        echo "|INFO| PID: $pid found. Sending signal..."
-        kill $pid
-        echo "|INFO| Killed PID $pid."
+        printf "${RED}●${NC} PID: $pid found. Killing.\n"
+#       kill $pid
+        printf "${RED}●${NC} Killed PID $pid.\n"
     else
-        echo "|INFO| PID $pid not found."
+        printf "${GRN}●${NC} PID: $pid not found. You are safe.\n"
     fi
-
-    read -p "|INFO| Press Enter to roll again or type 'exit' to quit: " choice
-
+	
+    printf "${BLU}●${NC} Press Enter to roll again or type 'exit' to quit: "
+    read choice
     if [[ $choice == "exit" ]]; then
         break
     fi
