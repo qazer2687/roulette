@@ -10,7 +10,7 @@ while true; do
 
     if ps -p $pid > /dev/null; then
         printf "${RED}●${NC} PID: $pid found. Killing.\n"
-#       kill $pid
+        kill $pid
         printf "${RED}●${NC} Killed PID $pid.\n"
     else
         printf "${GRN}●${NC} PID: $pid not found. You are safe.\n"
